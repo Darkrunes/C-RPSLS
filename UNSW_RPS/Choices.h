@@ -11,6 +11,7 @@ enum Choices
     Spock
 };
 
+// Used to display names of selected gestures
 const char *choicesNames[] = { "Rock", "Paper", "Scissors", "Lizard", "Spock" };
 
 #endif

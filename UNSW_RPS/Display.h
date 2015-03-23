@@ -2,6 +2,7 @@
 
 #define DISPLAY_H
 
+#include <stdio.h>
 #include <stdlib.h>
 #include "Choices.h"
 
@@ -17,7 +18,8 @@ void displayChoices(void) {
 }
 
 void displayGeneratedGesture(int gesture) {
-
+    printf("NOT YET IMPLEMENTED");
+    assert(1 > 2);
 }
 
 
