@@ -1,4 +1,5 @@
 #ifndef CHOICES_H
+
 #define CHOICES_H
 
 enum Choices
@@ -6,8 +7,10 @@ enum Choices
     Rock = 1,
     Paper,
     Scissors,
-    Spock,
     Lizard,
+    Spock
 };
+
+const char *choicesNames[] = { "Rock", "Paper", "Scissors", "Lizard", "Spock" };
 
 #endif
