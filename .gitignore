@@ -154,3 +154,10 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+UNSW_RPS.sln
+UNSW_RPS/UNSW_RPS.cpp
+UNSW_RPS/UNSW_RPS.vcxproj
+UNSW_RPS/UNSW_RPS.vcxproj.filters
+UNSW_RPS/stdafx.cpp
+UNSW_RPS/stdafx.h
+UNSW_RPS/targetver.h
