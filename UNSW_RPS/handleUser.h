@@ -5,28 +5,40 @@
 #include <stdio.h>
 #include <ctype.h>
 
-#define INVALID_USER_INPUT -1;
+#define INVALID_USER_INPUT 0;
 
 int getUserChoice() {
+    int userInput;
+    char charValue;
 
-    char userChoice;
-    int validUserChoice;
+    scanf("%c", &charValue);
+    userInput = getIntValue(charValue);
+    
+    if (validateInput(userInput, charValue)) {
+        return userInput;
+    } else {
+        return INVALID_USER_INPUT;
+    }
+}
 
-    scanf("%c", &userChoice);
+int validateInput(int userInput, char charValue) {
 
-    if (!isdigit(userChoice)) {
+    // isDigit uses char inputs
+    if (!isdigit(charValue)) {
         printf("Please enter the number corresponding to the gesture\n\n");
         return INVALID_USER_INPUT;
-    } else {
-        validUserChoice = userChoice - '0';
     }
 
-    if (validUserChoice > 5 || validUserChoice < 1) {
+    if (userInput > 5 || userInput < 1) {
         printf("Invalid number entered\n\n");
         return INVALID_USER_INPUT
     } else {
-        return validUserChoice;
+        return userInput;
     }
+}
+
+int getIntValue(char charValue) {
+    return (charValue - '0');
 }
 
 #endif
