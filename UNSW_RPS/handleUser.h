@@ -41,7 +41,7 @@ int validateInput(int userInput, char charValue) {
         return INVALID_USER_INPUT;
     }
 
-    if (userInput > 5 || userInput < 0) {
+    if (userInput > 4 || userInput < 0) {
         printf("Invalid number entered\n\n");
         return INVALID_USER_INPUT
     } else {

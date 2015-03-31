@@ -14,7 +14,7 @@ int generateDecision() {
 
     int randomDigit;
 
-    randomDigit = (rand() % 5) + 1;
+    randomDigit = (rand() % 5);
 
     return randomDigit;
 }
