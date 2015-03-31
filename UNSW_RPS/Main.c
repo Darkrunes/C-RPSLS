@@ -25,6 +25,11 @@ int main(int argc, char *argv[]) {
     char loopBreak;
 
     srand(time(0));
+    /*
+    for (int i = 0; i < 100; i++) {
+        gameMangerMain((rand() % 5));
+    }
+    */
 
     testWinner();
 
@@ -52,6 +57,7 @@ int main(int argc, char *argv[]) {
     }
 
     printf("\nPress the Enter or Return key to exit\n");
+    
     getchar();
     getchar();
  
