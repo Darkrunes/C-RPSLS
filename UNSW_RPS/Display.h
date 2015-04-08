@@ -26,12 +26,11 @@ void displayChoices() {
 void displayWinner(int winner, int playerGesture, int AIGesture) {
     /*
     Given the winner and both players gestures they are printed to the 
-    terminal,
-    ~~~~~~~~~TODO: ADD ASCII ART ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    terminal
     */
 
     switch (winner) {
-        case 0: printf("It was a tie!\n"); break;
+        case 0: printf("\nIt was a tie!\n"); break;
         case 1: printf("You are victorious!\n"); break;
         case 2: printf("AI Victorious!\n"); break;
         default: {
