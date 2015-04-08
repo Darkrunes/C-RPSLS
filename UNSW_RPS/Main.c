@@ -24,14 +24,13 @@ int main(int argc, char *argv[]) {
     int userChoice;
     char loopBreak;
 
-    srand(time(0));
-    /*
-    for (int i = 0; i < 100; i++) {
-        gameMangerMain((rand() % 5));
-    }
-    */
+    int gameCount = 0;
+    int *totalGames[100];
+    int *victories[100];
 
-    testWinner();
+    srand(time(0));
+
+    //printTests();
 
     while (1)
     {
@@ -49,11 +48,9 @@ int main(int argc, char *argv[]) {
         printf("Do you want to continue? (Y/N) ");
         scanf("\n%c", &loopBreak);
 
-        if (loopBreak == 'Y' || loopBreak == 'y') {
-            continue;
-        } else {
+        if (!(loopBreak == 'Y' || loopBreak == 'y')) {
             break;
-        }
+        } 
     }
 
     printf("\nPress the Enter or Return key to exit\n");
@@ -91,6 +88,9 @@ void printRandom() {
 }
 
 void testWinner() {
+    /*
+    Unit tests for getWinner function
+    */
     assert(getWinner(Rock, Paper) == 2);
     assert(getWinner(Spock, Scissors) == 1);
     assert(getWinner(Paper, Spock) == 1);
@@ -106,6 +106,8 @@ void testWinner() {
 
 void printTests() {
     //printf("User has chosen: %s, %d\n\n", choicesNames[userChoice - 1], userChoice);
+    testWinner();
     displayWinner(1, Rock, Spock);
     printRandom();
+    printf("Tests Passed");
 }

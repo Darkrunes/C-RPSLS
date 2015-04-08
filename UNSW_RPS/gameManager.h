@@ -23,10 +23,10 @@ int getWinner(int playerChoice, int AIChoice) {
 
     switch (remainder) {
         case 1:
-        case 3: return 1;      // Human Victorious
+        case 3:     return 1;      // Human Victorious
         case 2:
-        case 4: return 2;      // AI Victorious
-        default:return 0;      // Tie :(
+        case 4:     return 2;      // AI Victorious
+        default:    return 0;      // Tie :(
     }
 }
 
