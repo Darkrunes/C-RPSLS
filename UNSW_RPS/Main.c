@@ -65,7 +65,7 @@ int main(int argc, char *argv[]) {
 void emptyConsole() {
     /*
     Clearing console requires system specific code as such, just using 
-    many newlines. Using 42 as that is maximum height of a terminal
+    many newlines. Using 42 since that is about half of a terminal
     most of the time, getting the terminal height would require system
     specific code and limit portability
     */
