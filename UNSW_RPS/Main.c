@@ -1,7 +1,7 @@
 /* 
 Saffat Shams Akanda, z5061498
 The old family favourite: ROCK PAPER SCISSORS LIZARD SPOCK!
-Version 0.9fffff
+Version 1.00000000000000000
 
 Using modular arithmetic to determine winners and a random number 
 generator to create a basic game
