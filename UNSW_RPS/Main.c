@@ -23,11 +23,11 @@ void printTests();
 int main(int argc, char *argv[]) {
     int userChoice;
     char loopBreak;
-
+/*
     int gameCount = 0;
     int *totalGames[100];
     int *victories[100];
-
+*/
     srand(time(0));
 
     //printTests();
